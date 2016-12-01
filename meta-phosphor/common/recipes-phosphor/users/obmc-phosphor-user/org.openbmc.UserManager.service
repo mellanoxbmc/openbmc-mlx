@@ -1,0 +1,12 @@
+[Unit]
+Description=Phosphor User Manager
+
+[Service]
+ExecStart={sbindir}/obmc-phosphor-userd
+Environment="PYTHONUNBUFFERED=1"
+Restart=always
+Type=dbus
+BusName={BUSNAME}
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}

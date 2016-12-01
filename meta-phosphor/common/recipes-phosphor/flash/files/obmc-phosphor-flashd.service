@@ -1,0 +1,9 @@
+[Unit]
+Description=Phosphor Flash Controller
+
+[Service]
+Restart=always
+ExecStart={sbindir}/obmc-phosphor-flashd
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Phosphor Fan Controller
+
+[Service]
+Restart=always
+ExecStart={sbindir}/obmc-phosphor-fand
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}

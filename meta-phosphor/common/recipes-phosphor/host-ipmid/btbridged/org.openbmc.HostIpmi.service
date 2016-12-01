@@ -1,0 +1,11 @@
+[Unit]
+Description=Phosphor IPMI BT DBus Bridge
+
+[Service]
+Restart=always
+ExecStart={sbindir}/btbridged
+Type=dbus
+BusName={BUSNAME}
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}

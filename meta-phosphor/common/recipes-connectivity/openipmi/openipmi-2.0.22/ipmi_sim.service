@@ -1,0 +1,12 @@
+[Unit]
+Description=ipmi_sim
+After=network.target
+
+[Service]
+OOMScoreAdjust=-1000
+
+ExecStart=/usr/bin/ipmi_sim -n
+TimeoutSec=120
+
+[Install]
+WantedBy=multi-user.target

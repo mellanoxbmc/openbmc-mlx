@@ -1,0 +1,9 @@
+[Unit]
+Description=Phosphor Inverse ARP
+
+[Service]
+ExecStart={sbindir}/inarp
+Restart=always
+
+[Install]
+WantedBy={SYSTEMD_DEFAULT_TARGET}
